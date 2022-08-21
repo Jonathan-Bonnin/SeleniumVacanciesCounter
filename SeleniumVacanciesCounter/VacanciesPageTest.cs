@@ -25,6 +25,8 @@ namespace SeleniumVacanciesCounter
         {
             var vacanciesPage = new VacanciesPage(driver);
 
+            driver.Manage().Window.Maximize();
+
             vacanciesPage.SelectDepartment(department);
             vacanciesPage.SelectLanguage(language);
 
